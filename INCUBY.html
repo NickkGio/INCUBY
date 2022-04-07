@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INCUBY</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <style type="text/css">
+
+			
+
+        	.interfaccia {
+        		background-color: rgba(100, 201, 255, 0);
+        		position: absolute;
+        		left: 50%;
+    			top: 50%;
+				width: 250px;
+    			margin-left: 250px;
+    			margin-top: -190px;
+        	}
+
+
+        	.interfaccia input {
+        		width:  100%;
+        	}
+
+        	.interfaccia input[type="range"] {
+        		height: 2px;
+        		appearance: none;
+        		-webkit-appearance: button-bevel;
+        		border: none;
+        		background-color: rgba(255, 255, 255, 0.164);
+        		display: block;
+        	}
+
+
+        	.interfaccia select {
+        		width: 100%;
+        		display: block;
+        	}
+
+        	.interfaccia label {
+        		margin-top: 1.3em;
+        		display: block;
+        	}
+
+        </style>
+    </head>
+    <body>
+
+		
+		
+		
+       <div class="contenitore">
+
+		<div class="contenitore2">
+		
+			<h1>[INCUBY]<span></span></h1>
+			<button class="randomizer">RANDOMIZE</button>
+			
+		</div>
+		
+
+		
+		
+		<script>
+			var div =
+				document.querySelector(".contenitore");
+	  
+			div.addEventListener(
+				"mousemove", function (e) {
+					x = e.offsetX;
+					y = e.offsetY;
+					div.style.backgroundColor
+						= `rgb(${x}, ${y}, ${x - y})`;
+				});
+
+			
+		</script> 
+
+            <div class="layer faccia">
+                <img src="assets2/faccia_0.png" alt="">
+            </div>
+            <div class="layer bocca">
+                <img src="assets2/bocca_0.png" alt="">
+            </div>
+            <div class="layer naso">
+                <img src="assets2/naso_0.png" alt="">
+            </div>
+            <div class="layer occhio occhio-sx">
+                <img src="assets2/occhio_sx_0.png" alt="">
+            </div>  
+            <div class="layer occhio occhio-dx">
+                <img src="assets2/occhio_dx_0.png" alt="">
+            </div>                          
+        </div>
+
+        <div class="interfaccia">
+
+        	<label for="#input-faccia"><p>faccia</p></label>
+			<input id="input-faccia" type="range" step="1" value="0" min="0" max="5" >
+
+			<label for="#input-naso"><p>naso</p></label>
+			<input id="input-naso" type="range" step="1" value="0" min="0" max="5" >
+		
+			<label for="#input-bocca"><p>bocca</p></label>
+			<input id="input-bocca" type="range" step="1" value="0" min="0" max="5" >
+		
+			<label for="#input-occhio-sx"><p>occhio-sx</p></label>
+			<input id="input-occhio-sx" type="range" step="1" value="0" min="0" max="5" >
+		
+			<label for="#input-occhio-dx"><p>occhio-dx</p></label>
+			<input id="input-occhio-dx" type="range" step="1" value="0" min="0" max="5" >
+		
+			
+		
+        </div>
+
+        <script>
+
+        	document.querySelector("#input-faccia").addEventListener("input", function(e){
+        		const v = e.target.value
+	            const immagine_faccia = document.querySelector(".faccia img")
+	            immagine_faccia.src = "assets2/faccia_" + v + ".png"
+        	})
+
+        
+
+        	document.querySelector("#input-naso").addEventListener("input", function(e) {
+        		const v = e.target.value
+				const immagine_naso = document.querySelector(".naso img")
+	            immagine_naso.src = "assets2/naso_" + v + ".png"
+        		})
+        
+        	document.querySelector("#input-occhio-sx").addEventListener("input", function(e) {
+        		const v = e.target.value
+				const immagine_occhio_sx = document.querySelector(".occhio-sx img")
+	            immagine_occhio_sx.src = "assets2/occhio_sx_" + v + ".png"
+        		})
+        
+        	document.querySelector("#input-occhio-dx").addEventListener("input", function(e) {
+        		const v = e.target.value
+				const immagine_occhio_dx = document.querySelector(".occhio-dx img")
+	            immagine_occhio_dx.src = "assets2/occhio_dx_" + v + ".png"
+        		})
+        
+        	document.querySelector("#input-bocca").addEventListener("input", function(e) {
+        		const v = e.target.value
+				const immagine_bocca = document.querySelector(".bocca img")
+	            immagine_bocca.src = "assets2/bocca_" + v + ".png"
+        		})
+        
+        
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

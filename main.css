@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(22, 21, 21);
+    margin: 0;
+}
+.contenitore {
+    position: absolute;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}  
+.layer img {                
+    width:100%;
+    height:100%;
+}                   
+.faccia {
+    background-color: red;
+    width:100%;
+    height:100%;
+} 
+.naso {                
+    background-color: green;
+    width:32%;
+    height:32%;
+    left: 34%;
+    top: 37%;
+}
+.bocca {                
+    background-color: orange;
+    width: 55%;
+    height: 20%;
+    left: 22%;
+    top: 66%;
+}
+.occhio {
+    background-color: aquamarine;
+    width: 20%;
+    height: 20%;
+    top: 39%;
+}
+.occhio-dx {
+    right: 25%;
+}
+.occhio-sx {
+    left: 25%;
+}            
+.layer {
+    position:absolute;
+    background-color: transparent;
+}
+
+body
+{
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    color: beige;
+    
+}
+
+h1 {
+    width: 100px;
+    height: 200px;
+    font-size: 120px;
+    margin-left: -5px;
+    margin-top: 0px;
+    letter-spacing: 11.7px;
+    color: beige;
+        
+}
+
+.randomizer:hover {
+
+    color: greenyellow;
+    border: 2px solid greenyellow;
+
+}
+h1:hover {
+
+    color: greenyellow;
+    
+
+}
+
+
+
+.contenitore2 {
+    position: absolute;
+    background-color: rgb(22, 21, 21);
+    width: 400px;
+    height: 100px;
+    left: 80px;
+    top: 10px;
+    margin-left: -82px;
+    margin-top: -150px;
+}
+
+.randomizer {
+    color: beige;
+    border: 2px solid beige;
+    width: 150px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(14, 14, 14, 0);
+    font-size: 16px;
+    margin-top: 290px;
+    margin-left: 130px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+  }
+
+span {
+
+    font-size: 100px;
+    ;
+
+}
